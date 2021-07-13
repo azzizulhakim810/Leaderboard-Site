@@ -1,0 +1,381 @@
+:root {
+  --heading-color: #562EFF;
+  --heading-size: 24px;
+  --title-color: #000;
+  --title-size: 18px;
+  --name-size: 16px;
+  --poppins-weight: 500;
+  --roboto-weight: 600;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+}
+
+body {
+  background-color: #E5E5E5;
+  /* color: #A2A2A2; */
+}
+
+/* --------------------
+Header section style 
+----------------------*/
+
+header {
+  width: 100%;
+  background-color: #562EFF;
+  padding: 15px 0 15px 0;
+}
+.navbar {
+  width: 920px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo img {
+  width: 40px;
+  height: 50px;
+}
+.logo h3 {
+  font-size: 24px;
+  font-weight: 400;
+  margin-left: 15px;
+  color: #fff;
+}
+.nav-item ul{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.nav-item ul li {
+  margin-left: 36px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+}
+
+
+/* --------------------
+Top container section style 
+----------------------*/
+
+/* --------------------
+Top container top-part style 
+----------------------*/
+
+.top-container {
+  padding: 30px;
+  background-color: #fff;
+  margin: auto;
+  margin-top: 70px;
+  width: 870px;
+  border-radius: 5px;
+}
+.top-container h1 {
+  font-size: var(--heading-size);
+  font-weight: var(--poppins-weight);
+  text-transform: capitalize;
+  color: var(--heading-color);
+  margin-bottom: 40px;
+}
+.top-players {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  row-gap: 30px;
+}
+.top-container hr {
+  color: #D1D1D1;
+  margin: 30px auto;
+}
+.player {
+  display: flex;
+  align-items: center;
+}
+.player img {
+  width: 56px;
+  height: 56px;
+}
+.player h4 {
+  font-size: var(--name-size);
+  color: var(--title-color);
+  font-weight: var(--poppins-weight);
+  margin-left: 16px;
+}
+
+/* --------------------
+Top container lower-part style 
+----------------------*/
+
+.top-blogs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 26px;
+}
+.blog {
+  display: flex;
+  align-items: center;
+}
+.thumbnail img {
+  width: 177px;
+  height: 117px;
+}
+.blog_info {
+  margin-left: 16px;
+}
+.blog_info h3 {
+  font-size: var(--title-size);
+  color: var(--title-color);
+  font-weight: var(--poppins-weight);
+  width: 70%;
+  margin-bottom: 6px;
+}
+.blog_info a {
+  color: #562EFF;
+}
+.blog_info span {
+  color: #9F9F9F;
+}
+
+
+/* --------------------
+Lower container section style 
+----------------------*/
+
+.lower-container {
+  padding: 30px;
+  background-color: #fff;
+  margin: auto;
+  margin-top: 20px;
+  width: 870px;
+  border-radius: 5px;
+}
+.lower-container h1 {
+  font-size: var(--heading-size);
+  font-weight: var(--poppins-weight);
+  text-transform: capitalize;
+  color: var(--heading-color);
+  margin-bottom: 40px;
+}
+.courses {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 35px;
+}
+.course {
+  box-shadow: 0 0 10px rgb(223, 223, 223);
+  border-radius: 15px;
+  padding: 15px 0 15px 15px;
+}
+.course img {
+  width: 235px;
+  height: 105px;
+}
+.course h3 {
+  font-size: var(--title-size);
+  color: var(--title-color);
+  font-weight: var(--roboto-weight);
+  margin-top: 15px;
+}
+.course a {
+  display: block;
+  font-size: 14px;
+  color: #ED6B4F;
+  padding: 5px 0 18px 0;
+}
+.course-info {
+  display: flex;
+  justify-content: space-between;
+}
+.course-info i {
+  font-size: 15px;
+}
+.icons span {
+  color: #A2A2A2;
+}
+.course-info .fas{
+  color: #FFC014;
+}
+.course-info .far{
+  color: #AEAEAE;
+}
+.duration {
+  margin-right: 15px;
+  background: #FFE4E8;
+  color:#FF4A60;
+  border-radius: 15px;
+  padding: 2px 10px;
+}
+.duration .far {
+  font-size: 14px;
+  color:#FF4A60 ;
+}
+
+
+/* --------------------
+Media Query for all device 
+----------------------*/
+
+/* --------------------
+Media Query for Tablet device 
+----------------------*/
+
+
+@media (max-width:768px) {
+  
+    /* --------------
+  header section  
+  -----------------*/
+
+  
+  .navbar {
+    width: 700px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+/* --------------------
+Top container lower-part style 
+----------------------*/
+
+
+  /* --------------
+  blog section  
+  -----------------*/
+  
+  .top-blogs {
+    display: grid;
+    grid-template-columns: repeat(2, 380px);
+    row-gap: 26px;
+  }
+  .blog_info h3 {
+    font-size: var(--title-size);
+    color: var(--title-color);
+    font-weight: var(--poppins-weight);
+    width: 86%;
+    margin-bottom: 6px;
+  }
+  .blog_info a {
+    margin-right: 30px;
+  }
+
+
+/* --------------------
+Lower container style 
+----------------------*/
+
+
+  /* --------------
+  course section  
+  -----------------*/
+
+  .courses {
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+    column-gap: 1px;
+    row-gap: 30px;
+  }
+  .course {
+    padding: 15px 0 15px 15px;
+    width: 250px;
+    height: 270px;
+  }
+  .course img {
+    width: 235px;
+    height: 105px;
+  }
+  .course h3 {
+    font-size: var(--title-size);
+    color: var(--title-color);
+    font-weight: var(--roboto-weight);
+    margin-top: 15px;
+    margin-right: 10px;
+  }
+  .course a {
+    display: block;
+    font-size: 14px;
+    color: #ED6B4F;
+    padding: 5px 0 18px 0;
+  }
+}
+
+/* --------------------
+Media Query for Mobile device 
+----------------------*/
+
+@media (max-width:425px) {
+  
+  
+      /* --------------
+  header section  
+  -----------------*/
+
+  
+  .navbar {
+    width: 425px;
+    margin: auto;
+    display: block;
+  }
+  .nav-item ul li {
+    margin: auto;
+  }
+
+  /* --------------
+  Top Section top part section  
+  -----------------*/
+
+  .top-container {
+    padding: 30px;
+    width: 425px;
+  }
+
+  .top-players {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    row-gap: 30px;
+  }
+
+
+  /* --------------
+  Top Section lower part section  
+  -----------------*/
+
+
+  .top-blogs {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 26px;
+  }
+  .blog_info h3 {
+    width: 70%;
+  }
+
+
+  /* --------------
+  Lower section style 
+  -----------------*/
+
+
+  .courses {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 0px;
+  }
+  
+}
